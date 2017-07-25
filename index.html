@@ -50,6 +50,26 @@
     ul.menuButton li:hover {
         background-color: #ebb159;
     }
+    
+    //contents_home
+    
+    h3.contents_home {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_home::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: #ebb159;
+        border-radius: 4px;
+    }
+    
     </style>
     <body>
         <h1>協会【公式】</h1>
