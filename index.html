@@ -208,6 +208,24 @@
     .news_list_style:hover {
         box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
     }
+    //contents_setting
+    
+    h3.contents_setting {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_setting::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: #eeeeee;
+        border-radius: 4px;
+    }
     </style>
     <body>
         <h1>協会【公式】</h1>
