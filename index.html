@@ -70,6 +70,25 @@
         border-radius: 4px;
     }
     
+    
+    //contents_ranking
+    
+    h3.contents_ranking {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_ranking::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: rgba(255,100,0,0.5);
+        border-radius: 4px;
+    }
     </style>
     <body>
         <h1>協会【公式】</h1>
@@ -113,6 +132,11 @@
                     </div>
                 </div>
             </div>
+
+            <div class="c">
+                <h3 class="contents_ranking">ランキング</h3>
+            </div>
+            <div class="c">
         </div> <!-- contetns //-->
         
         <footer>
