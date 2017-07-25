@@ -6,6 +6,23 @@
     </head>
     
     <style>
+        
+        h3 {
+            position: relative;
+            padding: .75em 1em .75em 1.5em;
+            border: 1px solid #ccc;
+        }
+    h3::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: #ebb159;
+        border-radius: 4px;
+    }
     
     .list_style:nth-child(odd){
         background-color: #e6e6e6;
@@ -227,9 +244,11 @@
         border-radius: 4px;
     }
     </style>
+    
     <body>
         <h1>協会【公式】</h1>
         <h2>@glassespretty</h2>
+        
         <header>
             <menu>
                 <ul class="menuButton">
@@ -251,6 +270,7 @@
                 </ul>
             </menu>
         </header>
+        
         <div id="contents">
             <div class="c">
                 <h3 class="contents_home">HOME</h3>
@@ -290,6 +310,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="c">
                 <h3 class="contents_list">一覧</h3>
                 <div>
@@ -307,6 +328,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="c">
                 <h3 class="contents_news">ニュース</h3>
                 <div>
@@ -327,6 +349,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="c">
                 <h3 class="contents_setting">設定</h3>
                 <div style="height:300px">
@@ -348,5 +371,6 @@
         
         <footer>
         </footer>
+        
     </body>
 </html>
