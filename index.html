@@ -2,9 +2,41 @@
 <html lang="ja">
     <head>
         <title>協会【公式】</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
     </head>
     
     <style>
+        
+        h3 {
+            position: relative;
+            padding: .75em 1em .75em 1.5em;
+            border: 1px solid #ccc;
+        }
+    h3::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: #ebb159;
+        border-radius: 4px;
+    }
+    
+    .list_style:nth-child(odd){
+        background-color: #e6e6e6;
+    }
+    .list_style:nth-child(even){
+        background-color: #f6f6f6;
+    }
+    .list_style {
+        padding: .5em .75em;
+        margin-bottom:2px;
+        background-color: #f6f6f6;
+        border-left: 6px solid #ccc;
+    }
+    
         ul.menuButton li {
             background-color: #333;
             color: #fff;
@@ -36,10 +68,187 @@
     ul.menuButton li:hover {
         background-color: #ebb159;
     }
+    
+    //contents_home
+    
+    h3.contents_home {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_home::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: #ebb159;
+        border-radius: 4px;
+    }
+    
+    
+    //contents_ranking
+    
+    h3.contents_ranking {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_ranking::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: rgba(255,100,0,0.5);
+        border-radius: 4px;
+    }
+    .square {
+        font-family: 'Roboto Condensed', sans-serif;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+        padding: 0.5em;
+        background-color: rgba(255,100,0,0.5);
+    }
+    .ranking1 {
+        font-size:2.0em;
+        height: 38px;
+        padding: 0.1em 0.4em;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,0,0,0.5);
+    }
+    .ranking2 {
+        font-size:1.5em;
+        height: 26px;
+        padding: 0.4em 0.5em;
+        margin: 3px;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,100,0,0.5);
+    }
+    .ranking3 {
+        font-size:1.3em;
+        height: 20px;
+        padding: 0.4em 0.4em;
+        margin: 6px;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,100,0,0.5);
+    }
+    .ranking4 {
+        font-size:1.1em;
+        height: 20px;
+        padding: 0.4em 0.4em;
+        margin: 6px;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,150,100,0.5);
+    }
+    .ranking5 {
+        font-size:1.0em;
+        height: 20px;
+        padding: 0.4em 0.4em;
+        margin: 6px;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,150,100,0.5);
+    }
+
+    .ranking_new {
+        font-family: 'Roboto Condensed', sans-serif;
+        color:red;
+    }
+    .ranking_up {
+        font-family: 'Roboto Condensed', sans-serif;
+        color:orange;
+    }
+    .ranking_down {
+        font-family: 'Roboto Condensed', sans-serif;
+        color:blue;
+    }
+    .ranking_left_arrow {
+        font-family: 'Roboto Condensed', sans-serif;
+        color:green;
+        font-size:1.2em;
+    }
+    //contents_list
+    
+    h3.contents_list {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_list::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: rgba(0,200,0,0.5);
+        border-radius: 4px;
+    }
+    //contents_news
+    
+    h3.contents_news {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_news::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: rgba(255,0,0,0.5);
+        border-radius: 4px;
+    }
+    
+    .news_list_style:nth-child(odd){
+    }
+    .news_list_style:nth-child(even){
+    }
+    .news_list_style {
+        height:88px;
+        padding: .5em .75em;
+        margin-bottom:10px;
+        background-color: #f6f6f6;
+        border: 1px solid #ccc;
+        border-left: 6px solid #ccc;
+    }
+    .news_list_style:hover {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+    }
+    //contents_setting
+    
+    h3.contents_setting {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_setting::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: #eeeeee;
+        border-radius: 4px;
+    }
     </style>
+    
     <body>
         <h1>協会【公式】</h1>
         <h2>@glassespretty</h2>
+        
         <header>
             <menu>
                 <ul class="menuButton">
@@ -61,7 +270,107 @@
                 </ul>
             </menu>
         </header>
+        
+        <div id="contents">
+            <div class="c">
+                <h3 class="contents_home">HOME</h3>
+                <div style="height:300px">
+                    <div class="list_style">
+                        ホゲホゲ
+                    </div>
+                    <div class="list_style">
+                        ホゲホゲ
+                    </div>
+                    <div class="list_style">
+                        ホゲホゲ
+                    </div>
+                    <div class="list_style">
+                        ホゲホゲ
+                    </div>
+                </div>
+            </div>
+
+            <div class="c">
+                <h3 class="contents_ranking">ランキング</h3>
+                <div>
+                    <div class="list_style">
+                        <span class="ranking1 square">1</span> <span class="ranking_new">new</span>
+                    </div>
+                    <div class="list_style">
+                        <span class="ranking2 square">2</span> <span class="ranking_new">new</span>
+                    </div>
+                    <div class="list_style">
+                        <span class="ranking3 square">3</span> <span class="ranking_down">down</span>
+                    </div>
+                    <div class="list_style">
+                        <span class="ranking4 square">4</span> <span class="ranking_up">up</span>
+                    </div>
+                    <div class="list_style">
+                        <span class="ranking5 square">5</span> <span class="ranking_left_arrow">→</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="c">
+                <h3 class="contents_list">一覧</h3>
+                <div>
+                    <div class="list_style">
+                        タイトル１
+                    </div>
+                    <div class="list_style">
+                        タイトル２
+                    </div>
+                    <div class="list_style">
+                        タイトル３
+                    </div>
+                    <div class="list_style">
+                        タイトル４
+                    </div>
+                </div>
+            </div>
+            
+            <div class="c">
+                <h3 class="contents_news">ニュース</h3>
+                <div>
+                    <div class="news_list_style">
+                        記事１
+                    </div>
+                    <div class="news_list_style">
+                        記事２
+                    </div>
+                    <div class="news_list_style">
+                        記事３
+                    </div>
+                    <div class="news_list_style">
+                        記事４
+                    </div>
+                    <div class="news_list_style">
+                        記事５
+                    </div>
+                </div>
+            </div>
+            
+            <div class="c">
+                <h3 class="contents_setting">設定</h3>
+                <div style="height:300px">
+                    <div class="list_style">
+                        ホゲホゲ
+                    </div>
+                    <div class="list_style">
+                        ホゲホゲ
+                    </div>
+                    <div class="list_style">
+                        ホゲホゲ
+                    </div>
+                    <div class="list_style">
+                        ホゲホゲ
+                    </div>
+                </div>
+            </div>
+        </div> <!-- contetns //-->
+        
         <footer>
         </footer>
+        
     </body>
 </html>
