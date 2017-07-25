@@ -89,6 +89,72 @@
         background-color: rgba(255,100,0,0.5);
         border-radius: 4px;
     }
+    .square {
+        font-family: 'Roboto Condensed', sans-serif;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+        padding: 0.5em;
+        background-color: rgba(255,100,0,0.5);
+    }
+    .ranking1 {
+        font-size:2.0em;
+        height: 38px;
+        padding: 0.1em 0.4em;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,0,0,0.5);
+    }
+    .ranking2 {
+        font-size:1.5em;
+        height: 26px;
+        padding: 0.4em 0.5em;
+        margin: 3px;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,100,0,0.5);
+    }
+    .ranking3 {
+        font-size:1.3em;
+        height: 20px;
+        padding: 0.4em 0.4em;
+        margin: 6px;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,100,0,0.5);
+    }
+    .ranking4 {
+        font-size:1.1em;
+        height: 20px;
+        padding: 0.4em 0.4em;
+        margin: 6px;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,150,100,0.5);
+    }
+    .ranking5 {
+        font-size:1.0em;
+        height: 20px;
+        padding: 0.4em 0.4em;
+        margin: 6px;
+        color: rgba(255,255,255,1.0);
+        background-color: rgba(255,150,100,0.5);
+    }
+
+    .ranking_new {
+        font-family: 'Roboto Condensed', sans-serif;
+        color:red;
+    }
+    .ranking_up {
+        font-family: 'Roboto Condensed', sans-serif;
+        color:orange;
+    }
+    .ranking_down {
+        font-family: 'Roboto Condensed', sans-serif;
+        color:blue;
+    }
+    .ranking_left_arrow {
+        font-family: 'Roboto Condensed', sans-serif;
+        color:green;
+        font-size:1.2em;
+    }
     </style>
     <body>
         <h1>協会【公式】</h1>
@@ -135,6 +201,26 @@
 
             <div class="c">
                 <h3 class="contents_ranking">ランキング</h3>
+                <div>
+                    <div class="list_style">
+                        <span class="ranking1 square">1</span> <span class="ranking_new">new</span>
+                    </div>
+                    <div class="list_style">
+                        <span class="ranking2 square">2</span> <span class="ranking_new">new</span>
+                    </div>
+                    <div class="list_style">
+                        <span class="ranking3 square">3</span> <span class="ranking_down">down</span>
+                    </div>
+                    <div class="list_style">
+                        <span class="ranking4 square">4</span> <span class="ranking_up">up</span>
+                    </div>
+                    <div class="list_style">
+                        <span class="ranking5 square">5</span> <span class="ranking_left_arrow">→</span>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
             </div>
             <div class="c">
         </div> <!-- contetns //-->
