@@ -174,6 +174,24 @@
         background-color: rgba(0,200,0,0.5);
         border-radius: 4px;
     }
+    //contents_news
+    
+    h3.contents_news {
+        position: relative;
+        padding: .75em 1em .75em 1.5em;
+        border: 1px solid #ccc;
+    }
+    h3.contents_news::after {
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        content: '';
+        width: 6px;
+        height: -webkit-calc(100% - 1em);
+        height: calc(100% - 1em);
+        background-color: rgba(255,0,0,0.5);
+        border-radius: 4px;
+    }
     </style>
     <body>
         <h1>協会【公式】</h1>
