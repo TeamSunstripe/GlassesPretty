@@ -3,16 +3,27 @@
     <head>
         <title>協会【公式】</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+            <!--◆iPhone//-->
+            <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/iphone.css" type="text/css" />
+            <!--◆iPad//-->
+            <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="./css/ipad.css" type="text/css" />
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+
     </head>
-    
+
     <style>
-        
+        * {
+            margin:0;
+            padding:0;
+        }
         h3 {
             position: relative;
             padding: .75em 1em .75em 1.5em;
             border: 1px solid #ccc;
         }
-    h3::after {
+    h3:after {
         position: absolute;
         top: .5em;
         left: .5em;
@@ -36,7 +47,9 @@
         background-color: #f6f6f6;
         border-left: 6px solid #ccc;
     }
-    
+    ul.menuButton {
+        min-width :700px;
+    }
         ul.menuButton li {
             background-color: #333;
             color: #fff;
@@ -243,32 +256,83 @@
         background-color: #eeeeee;
         border-radius: 4px;
     }
+    #header {
+        height:30ex;
+    }
+    
+    .logo_header {
+        position:absolute;
+        width:100%;
+        min-height :27ex;
+        max-height :27ex;
+        top:0px;
+    }
+
+    #header h1 {
+        position:absolute;
+        width:100%;
+        top:1.5ex;
+    }
+    #header h2 {
+        position:absolute;
+        width:100%;
+        top:5.0ex;
+    }
+    #header menu {
+        position:absolute;
+        width:100%;
+        top:20.0ex;
+    }
+
     </style>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-89124000-1', 'auto');
+         ga('send', 'pageview');
+         
+        </script>
+
+    <script>
+        function openURL(url) {
+            ga('send', 'event', {
+               eventCategory: 'GlassesPretty - URL - ' + url,
+               eventAction: 'click',
+               eventLabel: 'URL_GlassesPretty_' + url
+               });
+               window.open(url, '_blank'); // 新しいタブを開き、ページを表示
+        }
+    </script>
     
     <body>
-        <h1>協会【公式】</h1>
-        <h2>@glassespretty</h2>
-        
         <header>
-            <menu>
-                <ul class="menuButton">
-                    <li>
-                        HOME
-                    </li>
-                    <li>
-                        ランキング
-                    </li>
-                    <li>
-                        一覧
-                    </li>
-                    <li>
-                        ニュース
-                    </li>
-                    <li>
-                        設定
-                    </li>
-                </ul>
-            </menu>
+            <div id="header">
+                <img class="logo_header" src="./images/log_megane.jpg" />
+                <h1>協会【公式】</h1>
+                <h2 onclick="openURL('https://twitter.com/glassespretty');">@glassespretty</h2>
+                <menu>
+                    <ul class="menuButton">
+                        <li>
+                            HOME
+                        </li>
+                        <li>
+                            ランキング
+                        </li>
+                        <li>
+                            一覧
+                        </li>
+                        <li>
+                            ニュース
+                        </li>
+                        <li>
+                            設定
+                        </li>
+                    </ul>
+                </menu>
+            </div>
         </header>
         
         <div id="contents">
